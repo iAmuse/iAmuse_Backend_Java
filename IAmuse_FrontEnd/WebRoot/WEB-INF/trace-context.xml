@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+       	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       	xmlns:p="http://www.springframework.org/schema/p" 
+       	xmlns:aop="http://www.springframework.org/schema/aop"
+       	xsi:schemaLocation="
+			http://www.springframework.org/schema/beans 
+			http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+			http://www.springframework.org/schema/aop 
+			http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
+
+	<!-- For parsing classes with @Aspect annotation -->
+	<aop:aspectj-autoproxy/>
+
+	<bean id="customizableTraceInterceptor" class="com.iamuse.admin.aspect.logging.TraceInterceptor" 
+		p:enterMessage="Entering $[methodName]($[arguments]) method of class $[targetClassShortName]"
+		p:exitMessage="Exiting $[methodName]() method of class $[targetClassShortName] return value is : $[returnValue]"
+		p:exceptionMessage="Error in method $[methodName]() of class $[targetClassShortName] Exception is $[exception]"
+		p:useDynamicLogger="true"/>
+	
+	<aop:config>
+	  <aop:advisor advice-ref="customizableTraceInterceptor" pointcut="execution(public * com.iamuse.admin.serviceimpl..*(..))"/>
+	  <aop:advisor advice-ref="customizableTraceInterceptor" pointcut="execution(public * com.iamuse.admin.controller..*(..))"/>
+	  <aop:advisor advice-ref="customizableTraceInterceptor" pointcut="execution(public * com.iamuse.admin.daoimpl..*(..))"/>
+	</aop:config>
+
+</beans>
