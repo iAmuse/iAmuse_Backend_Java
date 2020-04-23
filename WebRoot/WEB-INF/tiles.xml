@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="homelayout" template="/WEB-INF/jsp/layout/layout.jsp">
+        <put-attribute name="header" value="/WEB-INF/jsp/common/header.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/common/footer.jsp" />
+    </definition>
+    
+    <definition name="dashboardlayout" template="/WEB-INF/jsp/layout/dashboardlayout.jsp">
+        <put-attribute name="header" value="/WEB-INF/jsp/common/dashboardheader.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/jsp/common/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/common/footer.jsp" />
+    </definition>
+ 
+    <definition name="loginpage" extends="homelayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/login.jsp" />
+    </definition>
+    
+    <definition name="dashboard" extends="dashboardlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/iamuseDashBoard.jsp" />
+    </definition>
+       
+     <definition name="emailimages" extends="dashboardlayout">
+        <put-attribute name="menu" value="/WEB-INF/jsp/view/emailImageDashboard.jsp" />
+    </definition>
+    
+    <definition name="crashlogsListPage" extends="dashboardlayout">
+        <put-attribute name="menu" value="/WEB-INF/jsp/view/crashlogs.jsp" />
+    </definition>
+    
+    <definition name="deviceIPListPage" extends="homelayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/deviceIP.jsp" />
+    </definition>
+    
+    <!-- New Version 2.0 Iamuse New Phase 2 -->
+    
+    <definition name="simpleLayout" template="/WEB-INF/jsp/layout/new/simpleLayout.jsp">
+        <put-attribute name="body" value="" />
+    </definition>
+    
+    <definition name="layout" template="/WEB-INF/jsp/layout/new/layout.jsp">
+        <put-attribute name="header" value="/WEB-INF/jsp/common/new/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/jsp/common/new/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/common/new/footer.jsp" />
+    </definition>
+    
+    <definition name="registeredDeviceSuperAdmin" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/SuperAdminBoothSetup.jsp" />
+    </definition>
+    
+    <definition name="signInPage" extends="simpleLayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/SignInPage.jsp" />
+    </definition>
+    
+    <definition name="forgotPassword" extends="simpleLayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/forgotPassword.jsp" />
+    </definition>
+    
+    <definition name="registeredDevice" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/RegisterdDevices.jsp" />
+    </definition>
+    
+    <definition name="signUpPage" extends="simpleLayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/SignUpPage.jsp" />
+    </definition>
+    
+    <definition name="eventList" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/Event.jsp" />
+    </definition>
+    
+    <definition name="createEvent" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/CreateEvent.jsp" />
+    </definition>
+    
+    <definition name="eventBackground" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/EventBackground.jsp" />
+    </definition>
+    
+    <definition name="setUpBackground" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/SetUpBackground.jsp" />
+    </definition>
+    
+     <definition name="uploadedImages" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/UploadImages.jsp" />
+    </definition>
+    
+    <definition name="viewEventDatails" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/EventDetails.jsp" />
+    </definition>
+    
+    <definition name="myProfile" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/MyProfile.jsp" />
+    </definition>
+    
+     <definition name="editMyProfile" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/EditMyProfile.jsp" />
+    </definition>
+    
+    <definition name="contactEmail" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/ContactEmail.jsp" />
+    </definition>
+    
+    <definition name="subscription" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/Subscription.jsp" />
+    </definition>
+    
+    <definition name="upgradePlan" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/UpgradePlan.jsp" />
+    </definition>
+    
+    <definition name="boothSetUp" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/BoothSetup.jsp" />
+    </definition>
+    
+    <definition name="eventGallery" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/EventImagesGallery.jsp" />
+    </definition>
+    
+     <definition name="driveupload" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/driveupload.jsp" />
+    </definition>
+    
+     <definition name="rgbSetup" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/iamuseDashBoard.jsp" />
+    </definition>
+    
+    <definition name="openimagepage" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/openImage.jsp" />
+    </definition>
+    
+     <definition name="notifyPage" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/notifyPage.jsp" />
+    </definition>
+    
+     <definition name="boothSetUpByEvent" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/BoothSetupByEvent.jsp" />
+    </definition>
+    
+    <definition name="paymentReciept" extends="simpleLayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/PaypalReceipt.jsp" />
+    </definition>
+    
+    <definition name="socialShare" extends="simpleLayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/SocialShare.jsp" />
+    </definition>
+    
+     <definition name="eventSummary" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/EventImagesSummary.jsp" />
+    </definition>
+    
+    <definition name="changeOldPassword" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/ChangePassword.jsp" />
+    </definition>
+    
+    <definition name="crashlogsPage" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/crashlogs.jsp" />
+    </definition>
+    
+     <!-- Abhishek -->
+     
+     <definition name="superadminlayout" template="/WEB-INF/jsp/layout/new/layout.jsp">
+        <put-attribute name="header" value="/WEB-INF/jsp/common/new/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/jsp/common/new/superadminmenu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/common/new/footer.jsp" />
+    </definition>
+    
+    <definition name="upgradeSubscriptionPlan" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/SubscriptionPayment.jsp" />
+    </definition>
+    
+    <definition name="uploadedImagesSA" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/UploadImagesSA.jsp" />
+    </definition>
+    
+    <definition name="eventBackgroundSA" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/EventBackgroundSA.jsp" />
+    </definition>
+    
+    <definition name="addEventIamgesSA" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/AddEventImagesSA.jsp" />
+    </definition>
+    
+    <definition name="setUpBackgroundSA" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/SetUpBackgroundSA.jsp" />
+    </definition>
+    
+    <definition name="BoothAdminList" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/BoothAdminList.jsp" />
+    </definition>
+    
+    <definition name="test" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/test.jsp" />
+    </definition>
+    
+    <definition name="superadminSubscriptionList" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/superadminsubscription.jsp" />
+    </definition>
+    
+    <definition name="superadminCreateEvent" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/superadminCreateEvent.jsp" />
+    </definition>
+    
+    <definition name="createSuperadminSubscription" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/createSuperadminSubscription.jsp" />
+    </definition>
+    
+     <definition name="editSuperadminSubscription" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/editSuperadminSubscription.jsp" />
+    </definition> 
+    
+    <definition name="viewSuperadminSubscription" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/viewSuperadminSubscription.jsp" />
+    </definition>
+    
+    <definition name="viewsuperadminEvent" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/viewsuperadminEvent.jsp" />
+    </definition>
+    
+    <definition name="editsuperadminEvent" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/editsuperadminEvent.jsp" />
+    </definition>
+    
+    <definition name="pieChart" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/pieChart.jsp" />
+    </definition>
+    
+    <definition name="barChart" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/barChart.jsp" />
+    </definition>
+    
+    <definition name="SuperAdminEventList" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/SuperAdminEvent.jsp" />
+    </definition>
+    
+      <definition name="viewEventDatailSA" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/EventDetailSA.jsp" />
+    </definition>
+    
+    
+    <definition name="eventGallerySA" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/EventImagesGallerySA.jsp" />
+    </definition>
+    
+    <definition name="socialShareSA" extends="superadminlayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/super/SocialShareSA.jsp" />
+    </definition>
+    
+     <!-- Configuration -->
+     
+     <definition name="registeredDeviceConfig" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/config/RegisterdDevices.jsp" />
+    </definition>
+    
+    <definition name="boothSetUpByEventConfig" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/config/BoothSetupByEvent.jsp" />
+    </definition>
+    
+    <definition name="createEventConfig" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/config/CreateEvent.jsp" />
+    </definition>
+    
+    <definition name="eventBackgroundConfig" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/config/EventBackground.jsp" />
+    </definition>
+    
+    <definition name="uploadedImagesConfig" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/config/UploadImages.jsp" />
+    </definition>
+    
+    <definition name="setUpBackgroundConfig" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/config/SetUpBackground.jsp" />
+    </definition>
+    <!-- Ankit jawla code -->
+    
+     <definition name="boothOpenimagepage" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/config/boothOpenImage.jsp" />
+    </definition>
+    
+     <definition name="boothSetUpByEventConfig" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/config/BoothSetupByEvent.jsp" />
+    </definition>
+    
+    <definition name="zoomScaleImagePage" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/config/zoomScaleImage.jsp" />
+    </definition>
+    
+    <definition name="cropEdges" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/CropEdges.jsp" />
+    </definition>
+    
+    <definition name="zoomScalePage" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/zoomScaleImage.jsp" />
+    </definition>
+    
+    <definition name="addEventImage" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/new/AddEventImages.jsp" />
+    </definition>
+    
+    <definition name="addEventImageConfig" extends="layout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/config/AddEventImagesConfig.jsp" />
+    </definition>
+    
+    <definition name="404" extends="simpleLayout">
+        <put-attribute name="body" value="/WEB-INF/jsp/view/error.jsp" />
+    </definition>
+    
+</tiles-definitions>

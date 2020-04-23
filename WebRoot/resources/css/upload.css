@@ -1,0 +1,115 @@
+/* #progress-wrp {
+    border: 1px solid #0099CC;
+    padding: 1px;
+    position: relative;
+    height: 30px;
+        max-width: 88%;
+    border-radius: 3px;
+    margin: 10px;
+    text-align: left;
+    background: #fff;
+    box-shadow: inset 1px 3px 6px rgba(0, 0, 0, 0.12);
+  }
+  
+  #progress-wrp .progress-bar {
+    height: 100%;
+    border-radius: 3px;
+    background-color: #f39ac7;
+    width: 0;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.11);
+  }
+  
+  #progress-wrp .status {
+    top: 3px;
+    left: 50%;
+    position: absolute;
+    display: inline-block;
+    color: #000000;
+  }
+  
+  .google-heading{
+      margin-top: 6%;
+    margin-bottom: 6%;
+  }
+  
+  #files{
+  	margin-bottom: 3%;
+  
+  }
+  
+.btn-upload {
+    display: inline-block;
+    position: relative;
+    margin-top: 96px;
+    left: 0;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+        .Neon {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #494949;
+    position: relative;
+    
+
+}
+.Neon * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.Neon-input-dragDrop {
+    display: block;
+    width: 273px;
+    margin: 0 17px auto;
+    padding: 25px;
+    color: #8d9499;
+    color: #97A1A8;
+    background: #fff;
+    border: 2px dashed #C8CBCE;
+    text-align: center;
+    -webkit-transition: box-shadow 0.3s, border-color 0.3s;
+    -moz-transition: box-shadow 0.3s, border-color 0.3s;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+. Neon-input-dragDrop .Neon-input-icon {
+    font-size: 48px;
+    margin-top: -10px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+} 
+.Neon-input-text h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.Neon-input-text span {
+    font-size: 12px;
+}
+.Neon-input-choose-btn.blue {
+    color: #008BFF;
+    border: 1px solid #008BFF;
+}
+.Neon-input-choose-btn {
+    display: inline-block;
+    padding: 8px 14px;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8d9496;
+    border-radius: 3px;
+    border: 1px solid #c6c6c6;	
+    vertical-align: middle;
+    background-color: #fff;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.05);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+} */
